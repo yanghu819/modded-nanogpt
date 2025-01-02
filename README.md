@@ -3,6 +3,7 @@ The code snippet implements Gram-Schmidt orthogonalization to ensure the gradien
     ref_norm = ref / (ref.norm() + eps)  # Normalize the momentum vector
     proj = g @ ref_norm.T @ ref_norm     # Project gradient onto momentum direction
     g_orth = g - proj                    # Remove the projected component
+```
 
 This process:
 
